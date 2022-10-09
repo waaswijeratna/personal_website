@@ -1,0 +1,164 @@
+@keyframes background{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+@keyframes clip1{
+    0%{clip-path: polygon(0% -50%, 50% -50%, -50% 50%, -100% 50% );}
+    100%{clip-path: polygon(150% 50%, 200% 50%, 100% 150%, 50% 150%);}
+  }
+  @keyframes clipa{
+    0%{clip-path: polygon(-5% -55%, 55% -45%, -45% 55%, -95% 55% );}
+    50%{clip-path: polygon(150% 50%, 200% 50%, 100% 150%, 50% 150%);}
+    100%{clip-path: polygon(100% -100%, 100% -100%, -100% 100%, 100% 100% );}
+  }
+  @keyframes clip2{
+    0%{clip-path: polygon(50% -50%, 100% -50%, 200% 50%, 150% 50%);}
+    50%{clip-path: polygon(-100% 50%, -50% 50%, 50% 150%, 0% 150%);}
+    100%{clip-path: polygon(100% -100%, 100% -100%, -100% 100%, 100% 100% );}
+  }
+  @keyframes clipb{
+    0%{clip-path: polygon(40% -60%, 100% -50%, 190% 40%, 150% 50%);}
+    50%{clip-path: polygon(-100% 50%, -50% 50%, 50% 150%, 0% 150%);}
+    100%{clip-path: polygon(100% -100%, 100% -100%, -100% 100%, 100% 100% );}
+  }
+  @keyframes clip3{
+    0%{clip-path: polygon(-100% -150%, -50% -150%, -150% -50%, -200% -50%);}
+    50%{clip-path: polygon(150% 50%, 200% 50%, 100% 150%, 50% 150%);}
+    100%{clip-path: polygon(100% -100%, 100% -100%, -100% 100%, 100% 100% );}
+  }
+  @keyframes clip4{
+    0%{clip-path: polygon(150% -150%, 200% -150%, 300% -50%, 250% -50%);}
+    50%{clip-path: polygon(-100% 50%, -50% 50%, 50% 150%, 0% 150%);}
+    100%{clip-path: polygon(100% -100%, 100% -100%, -100% 100%, 100% 100% );}
+  }
+  .clip{
+      position: absolute;
+      width:24%;
+      height:50%;
+      margin-top: 11%;
+      padding-top: 0%;
+      margin-left: 25%;
+      background: url("11.png") no-repeat center;
+      background-size: contain;
+  }
+  #background{animation:background 3s ;}
+  #clip1 { animation:clip1 3s ; }
+  #clipa {
+      transform: scale(1.1,1.1);
+      animation:clipa 8s ease-in-out;  
+  }
+  #clip2 {
+    transform: scale(1.12,1.12); 
+    animation:clip2 4s ease-in-out; 
+}
+#clipb {
+    transform: scale(1.14,1.14);
+    animation:clipb 3s ease-in-out;   
+}
+#clip3 {
+    transform: scale(1.15,1.15);
+    animation:clip3 6s ease-in-out; 
+}
+#clip4 {
+    transform: scale(1.13,1.13);
+    animation:clip4 5s ease-in-out; 
+}
+
+
+/*portfolio*/
+.wbutton{
+  transition: 1s all;
+}
+.wbutton:hover{
+  transform: translateY(-10pt);
+}
+
+
+
+
+/*arrows*/
+
+.arrow1{
+  opacity: .3;
+  transition: all 1s;
+}
+.arrow2{
+  opacity: .3;
+  transition: all 1s;
+}
+
+.arrow1:hover{
+  opacity: 1;
+}
+.arrow2:hover{
+  opacity: 1;
+}
+
+
+/*navbar*/
+.content div a{
+  color:#fff;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.content div a:hover{
+  color: #ffffff;
+  text-shadow:1px 1px 1px #ffffff;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in; 
+}
+
+
+
+/*other animations*/
+.edu{
+  transition: 1.5s;
+}
+.edu:hover{
+  background-color: rgb(240, 240, 240);
+  color: black;
+}
+
+.portfolio_grid button{
+  transition: 1s;
+}
+.portfolio_grid button:hover{
+  box-shadow: 5pt 10pt 20pt black;
+  background-color: rgb(240, 240, 240);
+  color: black;
+}
+
+.button button{
+  transition: 1.2s;
+}
+.button button:hover{
+  scale: 1.1;
+  background-color: rgb(240, 240, 240);
+  color: black;
+}
+
+.linkicons div{
+  transition: 1s;
+}
+.linkicons div:hover{
+  scale: 1.1;
+}
+
+
+
+
+/*fonts*/
+
+@font-face {
+  font-family: f2;
+  src: url(f2.ttf);
+}
+@font-face {
+  font-family: f3;
+  src: url(f3.otf);
+}
